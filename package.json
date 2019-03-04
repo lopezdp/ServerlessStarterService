@@ -1,5 +1,5 @@
 {
-  "name": "nodeJS-starter-service-SpectrumAPI",
+  "name": "nodeJS-serverless-starter-service",
   "version": "1.1.11",
   "description": "A Node.js feature + microservice on the Serverless Framework with async/await and unit test support.",
   "main": "handler.js",
@@ -11,7 +11,7 @@
   "license": "Proprietary Software. No Distribution.",
   "repository": {
     "type": "git",
-    "url": "https://github.com/SpecTruMetRx/SpectrumStack.git"
+    "url": "https://github.com/lopezdp/ServerlessStarterService.git"
   },
   "devDependencies": {
     "aws-sdk": "^2.350.0",
@@ -22,7 +22,7 @@
     "babel-plugin-transform-runtime": "^6.23.0",
     "babel-preset-env": "^1.7.0",
     "babel-preset-stage-3": "^6.24.1",
-    "eslint": "^5.14.1",
+    "eslint": "^5.15.0",
     "eslint-config-standard": "^12.0.0",
     "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-node": "^8.0.0",

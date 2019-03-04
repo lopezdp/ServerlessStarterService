@@ -3,7 +3,7 @@
 # TODO: https://serverless.com/framework/docs/providers/aws/guide/intro/
 
 # New service names create new projects in AWS once deployed
-service: nodeJS-starter-service-SpectrumAPI
+#service: serverless-starter-service
 
 # Use the serverless-webpack plugin to transpile ES6
 plugins:
