@@ -1,8 +1,8 @@
-# Spectrum Treatment Log API
+# Serverless-Starter-Service API
 
-A Serverless API MicroService that adds ES7 syntax, serverless-offline, environment variables, and unit test support. Part of the [Spectrum Healthcare Stack](http://SpecTruMetRx.com).
+A Serverless API MicroService that adds ES7 syntax, serverless-offline, environment variables, and unit test support. Part of the [Serverless Tutorial Series](https://github.com/lopezdp/TechnicalArticles/blob/master/HowToBuildAServerlessReactAppOnAWS.md).
 
-[SpecTruMetRx](https://github.com/SpecTruMetRx) uses the [serverless-webpack](https://github.com/serverless-heaven/serverless-webpack) plugin, [Babel](https://babeljs.io), [serverless-offline](https://github.com/dherault/serverless-offline), and [Jest](https://facebook.github.io/jest/). It supports:
+The [Serverless Tutorial Series](https://github.com/lopezdp/TechnicalArticles/blob/master/HowToBuildAServerlessReactAppOnAWS.md) uses the [serverless-webpack](https://github.com/serverless-heaven/serverless-webpack) plugin, [Babel](https://babeljs.io), [serverless-offline](https://github.com/dherault/serverless-offline), and [Jest](https://facebook.github.io/jest/). It supports:
 
 - **ES7 syntax in your handler functions**
   - Use `import` and `export`
@@ -56,7 +56,7 @@ const message = ({ time, ...rest }) => new Promise((resolve, reject) =>
 To create a new Serverless project.
 
 ``` bash
-$ serverless install --url https://github.com/SpecTruMetRx/SpectrumStack/tree/master/services/nodeJS-starter-service-SpectrumAPI --name microservice-project
+$ serverless install --url https://github.com/lopezdp/ServerlessStarterService --name microservice-project
 ```
 
 Enter the new directory
@@ -91,7 +91,7 @@ To run a function on your local
 $ serverless invoke local --function hello
 ```
 
-To simulate API Gateway locally using [serverless-offline](https://github.com/dherault/serverless-offline)
+To simulate APIGateway locally using [serverless-offline](https://github.com/dherault/serverless-offline)
 
 ``` bash
 $ serverless offline start
@@ -122,10 +122,10 @@ To add another function as a new file to your project, simply add the new file a
 
 ### Support
 
-- Send us an [email](mailto:davidlopez@spectrumetrx.com) if you have any questions
-- Open a [new issue](https://github.com/lopezdp/Spectrum/issues/new) if you've found a bug or have some suggestions.
+- Send us an [email](mailto:davidplopez@live.com) if you have any questions
+- Open a [new issue](https://github.com/lopezdp/ServerlessStarterService/issues/new) if you've found a bug or have some suggestions.
 - Or submit a pull request!
 
 ### Maintainers
 
-Spectrum MediPay is maintained by David Lopez ([@davidplopez](https://instagram.com/davidplopez)). [**Subscribe to our newsletter** (Coming Soon!)](http://www.DavidPLopez.com) for updates. Send us an [email](mailto:davidlopez@spectrumetrx.com) if you have any questions.
+The [Serverless Tutorial Series](https://github.com/lopezdp/TechnicalArticles/blob/master/HowToBuildAServerlessReactAppOnAWS.md) is maintained by David Lopez ([@davidplopez](https://instagram.com/davidplopez)). [**Subscribe to our newsletter** (Coming Soon!)](http://www.DavidPLopez.com) for updates. Send us an [email](mailto:davidplopez@slive.com) if you have any questions.
