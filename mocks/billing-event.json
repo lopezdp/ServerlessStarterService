@@ -1,0 +1,8 @@
+{
+  "body": "{\"txnType\":\"SubscriptionFee\",\"txnQty\":10,\"source\":\"tok_visa\"}",
+  "requestContext": {
+    "identity": {
+      "cognitoIdentityId": "USER-SUB-1234"
+    }
+  }
+}

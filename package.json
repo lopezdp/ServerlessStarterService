@@ -1,0 +1,44 @@
+{
+  "name": "nodeJS-starter-service-SpectrumAPI",
+  "version": "1.1.11",
+  "description": "A Node.js feature + microservice on the Serverless Framework with async/await and unit test support.",
+  "main": "handler.js",
+  "scripts": {
+    "lint": "eslint .",
+    "test": "jest"
+  },
+  "author": "",
+  "license": "Proprietary Software. No Distribution.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SpecTruMetRx/SpectrumStack.git"
+  },
+  "devDependencies": {
+    "aws-sdk": "^2.350.0",
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^10.0.1",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-source-map-support": "^1.0.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-3": "^6.24.1",
+    "eslint": "^5.14.1",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-node": "^8.0.0",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-react": "^7.12.4",
+    "eslint-plugin-standard": "^4.0.0",
+    "jest": "^21.2.1",
+    "serverless-offline": "^3.25.6",
+    "serverless-webpack": "^5.1.0",
+    "webpack": "^4.16.2",
+    "webpack-node-externals": "^1.6.0"
+  },
+  "dependencies": {
+    "babel-runtime": "^6.26.0",
+    "source-map-support": "^0.4.18",
+    "stripe": "^6.17.0",
+    "uuid": "^3.3.2"
+  }
+}
