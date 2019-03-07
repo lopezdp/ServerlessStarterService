@@ -2,21 +2,21 @@
 
 A Serverless API MicroService that adds ES7 syntax, serverless-offline, environment variables, and unit test support. Part of the [Serverless Tutorial Series](https://github.com/lopezdp/TechnicalArticles/blob/master/HowToBuildAServerlessReactAppOnAWS.md).
 
-The [Serverless Tutorial Series](https://github.com/lopezdp/TechnicalArticles/blob/master/HowToBuildAServerlessReactAppOnAWS.md) uses the [serverless-webpack](https://github.com/serverless-heaven/serverless-webpack) plugin, [Babel](https://babeljs.io), [serverless-offline](https://github.com/dherault/serverless-offline), and [Jest](https://facebook.github.io/jest/). It supports:
+The [Serverless Tutorial Series](https://github.com/lopezdp/TechnicalArticles/blob/master/HowToBuildAServerlessReactAppOnAWS.md) uses the [serverless-webpack](https://github.com/serverless-heaven/serverless-webpack) plugin, [Babel](https://babeljs.io), [serverless-offline](https://github.com/dherault/serverless-offline), and [Jest](https://facebook.github.io/jest/). This service supports the following features:
 
-- **ES7 syntax in your handler functions**
+- **ES7 script is supported in all Lambdas**
   - Use `import` and `export`
-- **Packaging functions using Webpack**
-- **Run API Gateway locally**
+- **Bundle Lambda functions using Webpack**
+- **Execute API Gateway locally**
   - Use `serverless offline start`
-- **Support for unit tests**
+- **Added Support for unit testing**
   - Run `npm test` to run your tests
-- **Sourcemaps for proper error messages**
+- **Sourcemaps enable debugging and error messages**
   - Error message show the correct line numbers
-  - Works in production with CloudWatch
+  - Works in production with AWSCloudWatch
 - **Automatic support for multiple handler files**
-  - No need to add a new entry to your `webpack.config.js`
-- **Add environment variables for your stages**
+  - You do not have to add a new entry your `webpack.config.js`
+- **Add environment variables for each stage deployed**
 
 ---
 
@@ -27,23 +27,22 @@ A demo version of this service is hosted on AWS - [`https://z6pv80ao4l.execute-a
 And here is an example of the ES7 source behind it
 
 ``` javascript
+const message = ({time, ...rest}) => new Promise((resolve, reject) => setTimeout(() => {
+  resolve(`${rest.copy} (with a delay)`);
+}, time * 1000)
+);
+
 export const hello = async (event, context, callback) => {
   const response = {
     statusCode: 200,
     body: JSON.stringify({
-      message: `Go Serverless v1.0! ${(await message({ time: 1, copy: 'Your function executed successfully!'}))}`,
-      input: event,
-    }),
+      message: `You are now Serverless on AWS! ${(await message({ time: 1, copy: "Your serverless lambda has executed successfully!"}))}`,
+      input: event
+    })
   };
 
   callback(null, response);
 };
-
-const message = ({ time, ...rest }) => new Promise((resolve, reject) => 
-  setTimeout(() => {
-    resolve(`${rest.copy} (with a delay)`);
-  }, time * 1000)
-);
 ```
 
 ### Requirements
