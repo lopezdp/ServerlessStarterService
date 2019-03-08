@@ -12,7 +12,6 @@ module.exports = {
     "es6": true,
     "es7": true,
     "es8": true
-
   },
   "rules": {
     "react/jsx-uses-react": 2,
