@@ -1,5 +1,5 @@
 {
-  "name": "nodeJS-serverless-starter-service",
+  "name": "serverless-starter-service(node.js)",
   "version": "1.1.11",
   "description": "A Node.js feature + microservice on the Serverless Framework with async/await and unit test support.",
   "main": "handler.js",

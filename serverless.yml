@@ -3,7 +3,7 @@
 # TODO: https://serverless.com/framework/docs/providers/aws/guide/intro/
 
 # New service names create new projects in AWS once deployed
-#service: serverless-starter-service
+service: serverless-starter-service(node.js)
 
 # Use the serverless-webpack plugin to transpile ES6
 plugins:
@@ -39,16 +39,16 @@ provider:
     # stripePrivateKey: ${self:custom.environment.stripePrivateKey}
 
 functions:
-  # Defines an HTTP API endpoint that calls the hello function in handler.js
-  # - path: url path is /hello
+  # Defines an HTTP API endpoint that calls the microServerless function in handler.js
+  # - path: url path is /microServerless
   # - method: GET request
   # - cors: enabled CORS (Cross-Origin Resource Sharing) for browser cross
   #     domain api call
   createTreatmentLog:
-    handler: handler.hello
+    handler: handler.microServerless
     events:
       - http:
-          path: hello
+          path: microServerless
           method: get
           cors: true
 

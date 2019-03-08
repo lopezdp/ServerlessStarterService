@@ -3,6 +3,8 @@ module.exports = {
   "parser": "babel-eslint",
   "plugins": ["react"],
   "parserOptions": {
+    "ecmaVersion": 8,
+    "sourceType": "module",
     "ecmaFeatures": {
       "jsx": true
     }
@@ -10,8 +12,7 @@ module.exports = {
   "env": {
     "node": true,
     "es6": true,
-    "es7": true,
-    "es8": true
+    "es7": true
   },
   "rules": {
     "react/jsx-uses-react": 2,
