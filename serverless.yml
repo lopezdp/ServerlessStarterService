@@ -23,6 +23,18 @@ custom:
     webpackConfig: ./webpack.config.js
     includeModules: true
 
+  # ServerlessWarmup Configuration
+  # See configuration Options at:
+  # https://github.com/FidelLimited/serverless-plugin-warmup
+  warmup:
+    enabled: true # defaults to false
+    folderName: '_warmup' # Name of folder generated for warmup
+    memorySize: 256
+    events:
+      # Run WarmUp every 60 minutes Mon-Fri between 8:00am and 5:55pm (UTC)
+      - schedule: rate(60 minutes) 
+    timeout: 20
+
   # Load secret environment variables based on the current stage
   # Fallback to default if it is not in PROD
   environment: ${file(env.yml):${self:custom.stage}, file(env.yml):default}
@@ -45,13 +57,17 @@ functions:
   # - method: GET request
   # - cors: enabled CORS (Cross-Origin Resource Sharing) for browser cross
   #     domain api call
-  createTreatmentLog:
-    handler: handler.microServerless
+  createTransactionLog:
+    handler: handler.transactionLog
     events:
       - http:
-          path: microServerless
+          path: transactionLog
           method: get
           cors: true
+    # Warmup can be applied to each lambda to override 
+    # settings in custom.warmup block globally.
+    warmup:
+      enabled: true
 
 
 

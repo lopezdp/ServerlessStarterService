@@ -12,7 +12,7 @@ const message = ({time, ...rest}) => new Promise((resolve, reject) => setTimeout
 }, time * 1000)
 );
 
-export const microServerless = async (event, context, callback) => {
+export const transactionLog = async (event, context, callback) => {
   const response = {
     statusCode: 200,
     body: JSON.stringify({
