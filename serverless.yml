@@ -9,6 +9,7 @@ service: serverless-starter-service(node.js)
 plugins:
   - serverless-webpack
   - serverless-offline
+  - serverless-plugin-warmup
 
 # serverless-webpack configuration
 # Enable auto-packing of external modules
