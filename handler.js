@@ -12,14 +12,15 @@ const message = ({time, ...rest}) => new Promise((resolve, reject) => setTimeout
 }, time * 1000)
 );
 
-export const transactionLog = async (event, context, callback) => {
+export const starterService = async (event, context, callback) => {
   const response = {
     statusCode: 200,
     body: JSON.stringify({
-      message: `You are now Serverless on AWS! ${(await message({ time: 1, copy: "Your serverless lambda has executed successfully!"}))}`,
+      message: `You are now Serverless on AWS! ${(await message({ time: 1, copy: "Your serverless lambda has executed as it should!"}))}`,
       input: event
     })
   };
 
   callback(null, response);
 };
+

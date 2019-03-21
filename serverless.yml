@@ -31,8 +31,8 @@ custom:
     folderName: '_warmup' # Name of folder generated for warmup
     memorySize: 256
     events:
-      # Run WarmUp every 60 minutes Mon-Fri between 8:00am and 5:55pm (UTC)
-      - schedule: rate(60 minutes) 
+      # Run WarmUp every 720 minutes
+      - schedule: rate(720 minutes) 
     timeout: 20
 
   # Load secret environment variables based on the current stage
@@ -57,11 +57,11 @@ functions:
   # - method: GET request
   # - cors: enabled CORS (Cross-Origin Resource Sharing) for browser cross
   #     domain api call
-  createTransactionLog:
-    handler: handler.transactionLog
+  displayService:
+    handler: handler.starterService
     events:
       - http:
-          path: transactionLog
+          path: starterService
           method: get
           cors: true
     # Warmup can be applied to each lambda to override 
