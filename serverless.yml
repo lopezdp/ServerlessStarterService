@@ -6,6 +6,8 @@
 service: serverless-starter-service(node.js)
 
 # Use the serverless-webpack plugin to transpile ES6
+# Using offline to mock & test locally
+# Use warmup to prevent Cold Starts
 plugins:
   - serverless-webpack
   - serverless-offline
