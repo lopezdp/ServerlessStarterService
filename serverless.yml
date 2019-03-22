@@ -13,8 +13,7 @@ plugins:
   - serverless-offline
   - serverless-plugin-warmup
 
-# serverless-webpack configuration
-# Enable auto-packing of external modules
+# configure plugins declared above
 custom:
   # Stages are based on what is passed into the CLI when running
   # serverless commands. Or fallback to settings in provider section.
