@@ -58,6 +58,7 @@ functions:
   # - method: GET request
   # - cors: enabled CORS (Cross-Origin Resource Sharing) for browser cross
   #     domain api call
+  # - authorizer: authenticate using an AWS IAM Role
   displayService:
     handler: handler.starterService
     events:
