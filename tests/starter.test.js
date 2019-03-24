@@ -6,16 +6,17 @@
  *
  */
 
-import * as starterService from "../handler.js";
+import * as handler from "../handler.js";
 
 // FIXME: Correct eslint `no-undef` errors
-test("Initial Starter Service Unit Testing", () => {
+test("starterService Execution", async () => {
+  const event = "event";
+  const context = "context";
+  const callback = (error, response) => {
+    expect(response.statusCode).toEqual(200);
+    expect(typeof response.body).toBe("string");
+    expect(response.body).toMatch(/executed/);
+  };
 
-  let test = starterService();
-
-  // FIXME: Need to retrieve value from response object here
-  console.log("output: " + test);
-  // Check edge or corner case in String.
-  // Verify String value in lambda outputs in response...
-  expect(test).toMatch(/executed/);
+  await handler.starterService(event, context, callback);
 });
