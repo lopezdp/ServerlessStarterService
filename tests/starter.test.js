@@ -6,7 +6,7 @@
  *
  */
 
-import { starterService } from "../handler.js";
+import * as starterService from "../handler.js";
 
 // FIXME: Correct eslint `no-undef` errors
 test("Initial Starter Service Unit Testing", () => {
