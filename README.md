@@ -22,7 +22,7 @@ The [Serverless Tutorial Series](https://github.com/lopezdp/TechnicalArticles/bl
 
 ### Demo
 
-A demo version of this service is hosted on AWS - [`https://z6pv80ao4l.execute-api.us-east-1.amazonaws.com/dev/hello`](https://z6pv80ao4l.execute-api.us-east-1.amazonaws.com/dev/hello)
+A demo version of this service is hosted on AWS - [`https://g0xd40o7wd.execute-api.us-east-1.amazonaws.com/dev/starterService`](hhttps://g0xd40o7wd.execute-api.us-east-1.amazonaws.com/dev/starterService)
 
 And here is an example of the ES7 source behind it
 
@@ -127,4 +127,4 @@ To add another function as a new file to your project, simply add the new file a
 
 ### Maintainers
 
-The [Serverless Tutorial Series](https://github.com/lopezdp/TechnicalArticles/blob/master/HowToBuildAServerlessReactAppOnAWS.md) is maintained by David Lopez ([@davidplopez](https://instagram.com/davidplopez)). [**Subscribe to our newsletter** (Coming Soon!)](http://www.DavidPLopez.com) for updates. Send us an [email](mailto:davidplopez@slive.com) if you have any questions.
+The [Serverless Tutorial Series](https://github.com/lopezdp/TechnicalArticles#technical-articles) is maintained by David Lopez ([@davidplopez](https://instagram.com/davidplopez)). [**Subscribe to our newsletter** (Coming Soon!)](http://www.DavidPLopez.com) for updates. Send us an [email](mailto:davidplopez@slive.com) if you have any questions.
