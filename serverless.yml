@@ -3,7 +3,7 @@
 # TODO: https://serverless.com/framework/docs/providers/aws/guide/intro/
 
 # New service names create new projects in AWS once deployed
-service: serverless-starter-service(node.js)
+service: serverless-starter-service-node
 
 # Use the serverless-webpack plugin to transpile ES6
 # Using offline to mock & test locally

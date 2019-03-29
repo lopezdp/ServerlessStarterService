@@ -1,5 +1,5 @@
 /*
- * Title: handler.js WebService API
+ * Title: handler.js StarterService API
  * Serverless Starter Service
  * Author: David P. Lopez
  * Publisher: UniqueSoftwareDevelopment
