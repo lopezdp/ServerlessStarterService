@@ -22,7 +22,7 @@ The [Serverless Tutorial Series](https://github.com/lopezdp/TechnicalArticles/bl
 
 ### Demo
 
-A demo version of this service is hosted on AWS - [`https://g0xd40o7wd.execute-api.us-east-1.amazonaws.com/dev/starterService`](hhttps://g0xd40o7wd.execute-api.us-east-1.amazonaws.com/dev/starterService)
+A demo version of this service is hosted on AWS - [`https://g0xd40o7wd.execute-api.us-east-1.amazonaws.com/dev/starterService`](https://g0xd40o7wd.execute-api.us-east-1.amazonaws.com/dev/starterService)
 
 And here is an example of the ES7 source behind it
 
